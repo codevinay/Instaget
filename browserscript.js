@@ -14,7 +14,6 @@ if(current<totalPosts){
 		}
 		else{
 			clearInterval(myinterval);
-			console.log("done");
 			startExtraction();
 		}
 	}
@@ -42,4 +41,5 @@ function startExtraction(){
 	var txtArea = document.createElement('textarea');
 	nav_bar.appendChild(txtArea);
 	txtArea.value = stringFinal;
+	window.scrollTo(0,0);
 }
